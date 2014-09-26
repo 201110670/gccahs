@@ -889,7 +889,7 @@ div.ex{
 	<div data-role="navbar">
 		<ul>
 			<li><a href="#" style="background-color:#102947;"><img src="css/images/gradesicon.png" height="50%" width="60%"/></a></li>
-			<li><a href="studentSched" id="gotosched"  style="background-color:#102947;"><img src="css/images/schedicon.png" height="50%" width="60%"/></a></li>
+			<li><a id="gotosched"  style="background-color:#102947;"><img src="css/images/schedicon.png" height="50%" width="60%"/></a></li>
 			<li><a id="out2" style="background-color:#102947;"><img src="css/images/logouticon.png" height="50%" width="60%"/></a></li>
 		</ul>
 	</div><!-- /navbar -->
@@ -1262,6 +1262,7 @@ $('#loginparent').click(function(){
     function(data,status){
 	show2=data;
 	document.getElementById("showsched").innerHTML=show2;
+	window.location.href="#studentSched";
     });
 	});
 	//logout;
